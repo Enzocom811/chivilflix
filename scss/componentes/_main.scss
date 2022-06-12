@@ -1,0 +1,51 @@
+main {
+    .titulo {
+        .titulo-container {
+            margin: 80px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                color: white;
+            }
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        .card {
+            width: 20%;
+            margin: 20px;
+            .img-container {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .datos-container {
+                /* border: 1px solid red; */
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: repeat(2, 30px);
+                .container-hijoA {
+                    /* border: 1px solid red; */
+                    color: yellow;
+                    margin-right: 5px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                .container-hijoB {
+                    /* border: 1px solid red; */
+                    color: white;
+                    margin-left: 5px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

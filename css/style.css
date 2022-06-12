@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+header .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+header .logo-container img {
+  width: 40%;
+}
+header nav {
+  margin-top: 100px;
+  display: flex;
+}
+header nav div {
+  margin: 0 30px;
+}
+header nav div a {
+  text-decoration: none;
+}
+header nav div a h2 {
+  color: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main .titulo .titulo-container {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .titulo .titulo-container h1 {
+  color: white;
+}
+main .cards-container {
+  display: flex;
+  justify-content: center;
+}
+main .cards-container .card {
+  width: 20%;
+  margin: 20px;
+}
+main .cards-container .card .img-container {
+  width: 100%;
+}
+main .cards-container .card .img-container img {
+  width: 100%;
+}
+main .cards-container .card .datos-container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 30px);
+}
+main .cards-container .card .datos-container .container-hijoA {
+  /* border: 1px solid red; */
+  color: yellow;
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .cards-container .card .datos-container .container-hijoB {
+  /* border: 1px solid red; */
+  color: white;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

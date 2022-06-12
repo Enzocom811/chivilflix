@@ -1,0 +1,25 @@
+header {
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        img {
+            width: 40%;
+        }
+    }
+
+    nav {
+        margin-top: 100px;
+        display: flex;
+        div {
+            margin: 0 30px;
+            a {
+                text-decoration: none;
+                h2 {
+                color: red;
+                }
+            }
+            
+        }
+    }
+}
