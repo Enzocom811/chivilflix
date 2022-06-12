@@ -25,12 +25,11 @@ main {
             }
 
             .datos-container {
-                /* border: 1px solid red; */
+                margin-top: 8px;
                 display: grid;
                 grid-template-columns: auto auto;
                 grid-template-rows: repeat(2, 30px);
                 .container-hijoA {
-                    /* border: 1px solid red; */
                     color: yellow;
                     margin-right: 5px;
                     display: flex;
@@ -38,7 +37,6 @@ main {
                     align-items: center;
                 }
                 .container-hijoB {
-                    /* border: 1px solid red; */
                     color: white;
                     margin-left: 5px;
                     display: flex;

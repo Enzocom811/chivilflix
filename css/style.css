@@ -54,13 +54,12 @@ main .cards-container .card .img-container img {
   width: 100%;
 }
 main .cards-container .card .datos-container {
-  /* border: 1px solid red; */
+  margin-top: 8px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 30px);
 }
 main .cards-container .card .datos-container .container-hijoA {
-  /* border: 1px solid red; */
   color: yellow;
   margin-right: 5px;
   display: flex;
@@ -68,11 +67,57 @@ main .cards-container .card .datos-container .container-hijoA {
   align-items: center;
 }
 main .cards-container .card .datos-container .container-hijoB {
-  /* border: 1px solid red; */
   color: white;
   margin-left: 5px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+
+section .texto-container {
+  text-align: center;
+  margin-top: 25px;
+}
+section .texto-container a {
+  text-decoration: none;
+}
+section .texto-container a h2 {
+  color: red;
+}
+
+main .container {
+  margin-top: 50px;
+  display: flex;
+}
+main .container section {
+  width: 30%;
+}
+main .container section .portada-container {
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+main .container section .portada-container img {
+  width: 95%;
+}
+main .container .info-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+main .container .info-container .info-containerPadre {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(6, 125px);
+}
+main .container .info-container .info-containerPadre .contenedor-hijoA {
+  color: yellow;
+  display: flex;
+  align-items: center;
+}
+main .container .info-container .info-containerPadre .contenedor-hijoB {
+  color: white;
+  display: flex;
   align-items: center;
 }
 
