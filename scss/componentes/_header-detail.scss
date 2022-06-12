@@ -5,7 +5,11 @@ section {
         a {
             text-decoration: none;
             h2 {
-                    color: red;
+                color: red;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -52,6 +52,11 @@ main .cards-container .card .img-container {
 }
 main .cards-container .card .img-container img {
   width: 100%;
+  border-radius: 0.5%;
+}
+main .cards-container .card .img-container img:hover {
+  transform: scale(1.02);
+  transition: all 0.5s;
 }
 main .cards-container .card .datos-container {
   margin-top: 8px;
@@ -83,6 +88,9 @@ section .texto-container a {
 }
 section .texto-container a h2 {
   color: red;
+}
+section .texto-container a h2:hover {
+  text-decoration: underline;
 }
 
 main .container {
