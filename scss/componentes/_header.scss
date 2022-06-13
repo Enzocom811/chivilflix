@@ -1,3 +1,4 @@
+/* HEADER */
 header {
     .logo-container {
         display: flex;
@@ -5,21 +6,40 @@ header {
         margin-top: 20px;
         img {
             width: 40%;
+
+            @media screen and (max-width: 576px) and (max-height: 915px) {
+                width: 65%;
+            }
+            @media screen and (min-width: 576px) and (max-width: 1200px) {
+                width: 60%;
+            }
         }
     }
 
     nav {
         margin-top: 100px;
         display: flex;
+        font-size: 20px;
         div {
             margin: 0 30px;
             a {
                 text-decoration: none;
-                h2 {
+                p {
                 color: red;
+
+                @media screen and (max-width: 576px) and (max-height: 915px) {
+                    font-size: 15px;
+                }
                 }
             }
             
         }
+        @media screen and (max-width: 576px) and (max-height: 915px) {
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 576px) and (max-width: 1200px) {
+            justify-content: space-around;
+        }
     }
 }
+/* FIN HEADER */

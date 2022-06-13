@@ -1,3 +1,4 @@
+/* MAIN DETAIL */
 main {
     .container {
         margin-top: 50px;
@@ -10,7 +11,28 @@ main {
             justify-content: flex-start;
             img {
                 width: 95%;
+            
+            @media screen and (min-width: 576px) and (max-width: 1200px) {
+                width: 50%;
             }
+            }
+
+            @media screen and (max-width: 576px) and (max-height: 915px) {
+                justify-content: center;
+                margin: 0;
+            }
+            @media screen and (min-width: 576px) and (max-width: 1200px) {
+                justify-content: center;
+                margin: 0 0 20px 0;
+            }
+        }
+    
+        @media screen and (max-width: 576px) and (max-height: 915px) {
+            width: 100%;
+            justify-content: center;
+        }
+        @media screen and (min-width: 576px) and (max-width: 1200px) {
+            width: 100%;
         }
     }
 
@@ -20,20 +42,62 @@ main {
         align-items: center;
         .info-containerPadre {
             display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: repeat(6, 125px);
+            grid-template-columns: 20% 70%;
+            grid-template-rows: repeat(6, auto);
+            gap: 70px;
             .contenedor-hijoA {
                 color: yellow;
                 display: flex;
                 align-items: center;
+
+                @media screen and (max-width: 576px) and (max-height: 915px) {
+                    font-size: 12px;
+                    align-items: flex-start;
+                }
+                @media screen and (min-width: 576px) and (max-width: 1200px) {
+                    align-items: flex-start;
+                }
                 }
 
             .contenedor-hijoB {
                 color: white;
                 display: flex;
                 align-items: center;
+
+                @media screen and (max-width: 576px) and (max-height: 915px) {
+                    font-size: 12px;
+                    align-items: flex-start;
+                }
+                @media screen and (min-width: 576px) and (max-width: 1200px) {
+                    font-size: 14px;
+                }
+                }
+            
+                @media screen and (max-width: 576px) and (max-height: 915px) {
+                    grid-template-rows: repeat(6, auto);
+                    gap: 15px;
+                }
+                @media screen and (min-width: 576px) and (max-width: 1200px) {
+                    grid-template-rows: repeat(6, auto);
+                    grid-template-columns: 20% 60%;
+                    gap: 15px;
+                    justify-content: center;
                 }
             }
+        
+            @media screen and (max-width: 576px) and (max-height: 915px) {
+                width: 90%;
+                justify-content: space-around;
+                margin: 30px 0 0 10px;
+            }
+            @media screen and (min-width: 576px) and (max-width: 1200px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
         }
     }
 }
+/* FIN MAIN DETAIL */
