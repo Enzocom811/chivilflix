@@ -37,6 +37,8 @@ header nav {
   font-size: 20px;
 }
 header nav div {
+  display: flex;
+  justify-content: center;
   margin: 0 30px;
 }
 header nav div a {
@@ -47,12 +49,12 @@ header nav div a p {
 }
 @media screen and (max-width: 576px) and (max-height: 915px) {
   header nav div a p {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 576px) and (max-height: 915px) {
   header nav {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 1200px) {
